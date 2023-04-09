@@ -34,7 +34,9 @@ def decode(encoded_list):
     for num in encoded_list:
         l = ""
         for i in range(5):
-            char = inverse_alphabet_position((num // (37 ** (5 - i - 1))) % 37)
+            n = (num // (37 ** (5 - i - 1))) % 37
+            if(n == 0): break
+            char = inverse_alphabet_position(n)
             l += char
         plain_text += l
     return plain_text

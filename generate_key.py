@@ -1,11 +1,11 @@
 import random
 import math
 
-def generate_key(number_of_digits):
+def generate_key(number_of_bits):
     p = 0
     q = 0
-    start = 10**(number_of_digits//2+1)
-    end = 10**((number_of_digits//2+1) + 1)
+    start = 2**(number_of_bits//2+1)
+    end = 2**((number_of_bits//2+1) + 1)
     while True:
         p = random.randint(start, end)
         if is_prime(p):

@@ -6,7 +6,7 @@ import generate_key as key
 
 text = 'h'
 decrypt_time = []
-for i in range(0,10):
+for i in range(5,20):
     (e, n), (d, n) = key.generate_key(i)
     encoded = rsa.encode(text)
     encrypted = rsa.group_encrypt(encoded, e, n)
@@ -15,6 +15,9 @@ for i in range(0,10):
     #-----------------Attack-----------------
     start = time.time()
     d_init = 1
+    if(e < d): d_init = e
+    else: d_init = d // 10 
+    print(f"e: {e}, d: {d}, d_init: {d_init}")
     while decrypted != rsa.group_decrypt(encrypted, d_init, n):
         d_init += 1
     end = time.time()

@@ -12,7 +12,7 @@ s.listen(1)
 c, addr = s.accept()
 
 
-(e1, n1), (d1, n1) = key.generate_key(10)
+(e1, n1), (d1, n1) = key.generate_key(80)
 
 def send_int(data):
     c.sendall(bytes(str(data), 'utf-8'))

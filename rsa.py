@@ -59,11 +59,14 @@ def group_decrypt(C, d, n):
 
 
 
-# (e, n), (d, n) = key.generate_key(10)
+# (e, n), (d, n) = key.generate_key(80)
 
 # text = 'hello world'
 # encoded = encode(text)
+# print(encoded)
 # encrypted = group_encrypt(encoded, e, n)
+# print(encrypted)
 # decrypted = group_decrypt(encrypted, d, n)
+# print(decrypted)
 # decoded = decode(decrypted)
 # print(decoded)

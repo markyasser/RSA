@@ -10,7 +10,7 @@ s = socket.socket()
 s.connect((host,port))
 
 
-(e2, n2), (d2, n2) = key.generate_key(10)
+(e2, n2), (d2, n2) = key.generate_key(80)
 
 def send_int(data):
     s.sendall(bytes(str(data), 'utf-8'))

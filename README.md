@@ -17,5 +17,4 @@
 
 # Result Analysis
 
-![image](https://github.com/markyasser/RSA/assets/82395903/acf1f6d4-1f9f-4f06-ad2c-f12095932d0c)
-
+![image](https://github.com/markyasser/RSA/assets/82395903/27d77733-8619-49a0-9767-00af43083e34)
